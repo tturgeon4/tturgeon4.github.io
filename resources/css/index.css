@@ -18,6 +18,7 @@
 /* CSS for entire document */
 html {
     font-family: 'Josefin Sans';
+    font-size: 19px;
 }
 
 body {
@@ -27,17 +28,32 @@ body {
     height: 100%;
 }
 
+main {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
 ul {
     padding: 0;
 }
+
+.title {
+    margin-bottom: 5px;
+}
+
+/* Links */
 
 a {
     text-decoration: none;
 }
 
+
+
 /* Header CSS */
 header {
+    display: inline-block;
     text-align: center;
+    font-size: 22px;
     color: hsl(235, 12%, 35%);
     background-color: hsla(235, 12%, 35%, 0.1);
     width: 100%;
@@ -87,18 +103,25 @@ ul {
 
 /* About me section */
 .aboutme {
-    text-align: center;
+    text-align: right;
     line-height: 25px;
     float: right;
-    margin-top: 50px;
     margin-left: 50px;
-    margin-right: 50px;
 }
 
 .aboutme-intro {
     width: 40%;
-    font-size: 15px;
     float: right;
+}
+
+/* Certificate Section */
+.certifications {
+    float: left;
+}
+
+.certifications-desc {
+    float: left;
+    width: 40%;
 }
 
 /* Footer */
