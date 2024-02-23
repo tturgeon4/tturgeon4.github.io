@@ -16,9 +16,16 @@
 }
 
 /* CSS for entire document */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
 html {
     font-family: 'Josefin Sans';
     font-size: 19px;
+    color: hsl(235, 12%, 35%);
 }
 
 body {
@@ -26,11 +33,6 @@ body {
     margin: 0;
     width: 100%;
     height: 100%;
-}
-
-main {
-    margin-left: 50px;
-    margin-right: 50px;
 }
 
 ul {
@@ -41,82 +43,131 @@ ul {
     margin-bottom: 5px;
 }
 
-.aboutme p, .certifications p, .resume p {
-    margin-top: 5px;
-}
-
 /* Links */
 
 a {
     text-decoration: none;
 }
 
-
-
 /* Header CSS */
 header {
-    display: inline-block;
+    display: inline-flex;
     text-align: center;
-    font-size: 22px;
     color: hsl(235, 12%, 35%);
     background-color: hsla(235, 12%, 35%, 0.1);
     width: 100%;
-    height: 100%
+    height: 100px;
 }
 
-header h1 {
-    margin: 0px;
-    padding-top: 20px;
-}
-
-header h5 {
-    margin-top: 5px;
-    margin-bottom: 0;
-    padding-bottom: 20px;
+header .website-title {
+    display: inline-flex;
+    font-size: 22px;
+    max-width: 25%;
+    min-width: 10%;
+    align-items: center;
+    flex-grow: 2;
+    flex-basis: 25%;
+    flex-wrap: nowrap;
+    border-right: solid 10px hsla(0, 0%, 0%, 0.2);
 }
 
 /* Nav menu css */
 nav {
+    display: inline-flex;
+    font-size: 22px;
     background-color: hsla(235, 12%, 35%, 0.2);
     width: 100%;
     padding-top: 1px;
     padding-bottom: 1px;
-    display: absolute;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
 
-ul {
-    margin-top: 8px;
-    margin-bottom: 8px;
+ul .nav-menu {
+    align-items: center;
+
 }
 
 .nav-menu li {
-    display: inline-block;
-
+    display: inline-flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
 }
 
 .nav-item {
+    display: inline-flex;
     color: hsla(235, 12%, 35%, 0.8);
     border-radius: 5px;
     margin-left: 50px;
     margin-right: 50px;
+    padding: 6px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    align-items: center;   
+    justify-content: center;
+}
+
+
+.nav-item::after {
+    display: inline-flex;
+    align-items: baseline;
+    float: right;
+    content:"\25be";
 }
 
 .nav-item:hover {
-    background-color: hsla(0, 0%, 50%, 0.5);
+    background-color: hsla(0, 0%, 50%, 0.3);
+}
+
+.nav-item:active {
+    background-color: hsla(0, 0%, 50%, 0.7);
 }
 
 /* About me section */
 .aboutme {
+    width: 100%;
+    display: inline-flex;
     text-align: left;
-    line-height: 25px;
-    float: left;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    background-color: hsla(197, 87%, 70%, 0.5);   
 }
 
 
 .aboutme-intro {
-    width: 40%;
-    float: left;
+    text-align: left;
+    flex-direction: column;
+    display: flex;
+    max-width: 30%;
+    min-width: 20%;
+    height: 300px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
+
+.aboutme-intro p{
+    border-left: 10px solid hsla(0, 0%, 0%, 0.2);
+    padding-left: 3px;
+}
+
+.aboutme-intro .title {
+    text-align: left;
+}
+
+.aboutme-photo {
+    background-image: url("../images/turgeon_headshot.png");
+    width: 220px;
+    height: 220px;
+    z-index: 10;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 10px groove hsla(0, 0%, 0%, 0.2);
+}
+
 
 /* Certificate Section */
 .certifications {
