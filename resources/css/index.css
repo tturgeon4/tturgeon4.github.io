@@ -79,59 +79,6 @@ header .website-title {
     border-right: solid 10px hsla(0, 0%, 0%, 0.2);
 }
 
-/* Nav menu css */
-nav {
-    display: inline-flex;
-    font-size: 22px;
-    background-color: hsla(235, 12%, 35%, 0.2);
-    width: 100%;
-    padding-top: 1px;
-    padding-bottom: 1px;
-    align-items: flex-end;
-    justify-content: flex-end;
-}
-
-ul .nav-menu {
-    align-items: center;
-
-}
-
-.nav-menu li {
-    display: inline-flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-content: center;
-    align-items: center;
-}
-
-.nav-item {
-    display: inline-flex;
-    color: hsla(235, 12%, 35%, 0.8);
-    border-radius: 5px;
-    margin-left: 50px;
-    margin-right: 50px;
-    padding: 6px;
-    margin-bottom: 5px;
-    margin-top: 5px;
-    align-items: center;   
-    justify-content: center;
-}
-
-.nav-item::after {
-    display: inline-flex;
-    align-items: baseline;
-    float: right;
-    content:"\25be";
-}
-
-.nav-item:hover {
-    background-color: hsla(0, 0%, 50%, 0.3);
-}
-
-.nav-item:active {
-    background-color: hsla(0, 0%, 50%, 0.7);
-}
-
 /* About me section */
 .aboutme {
     width: 100%;
@@ -139,7 +86,6 @@ ul .nav-menu {
     text-align: left;
     justify-content: space-around;
     align-items: center;
-    align-content: center;
     background-color: hsla(197, 87%, 70%, 0.5);   
 }
 
@@ -190,13 +136,6 @@ ul .nav-menu {
     justify-content: center;
 }
 
-.certifications-desc {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    width: 40%;
-}
-
 .certification-cards {
     display: grid;
     margin-top: 20px;
@@ -224,26 +163,4 @@ footer{
 footer li {
     margin: 0px;
     display: inline-block;
-}
-
-/* Media Queries */
-@media screen and (max-width: 1180px) {
-    .aboutme {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        align-items: center;
-    }
-    
-    .aboutme-intro {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        max-width: 50%;
-    }
-
-    .aboutme-intro h2 {
-        display: flex;
-        flex-direction: column;
-    }
 }

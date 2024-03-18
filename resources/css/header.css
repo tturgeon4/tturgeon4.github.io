@@ -1,0 +1,72 @@
+/* Header CSS */
+header {
+    display: inline-flex;
+    text-align: center;
+    color: hsl(235, 12%, 35%);
+    background-color: hsla(235, 12%, 35%, 0.1);
+    width: 100%;
+    height: 100px;
+    border-bottom: solid 10px hsla(0, 0%, 0%, 0.2);
+}
+
+header .website-title {
+    display: inline-flex;
+    font-size: 22px;
+    max-width: 25%;
+    min-width: 10%;
+    align-items: center;
+    flex-grow: 2;
+    flex-basis: 25%;
+    flex-wrap: nowrap;
+    border-right: solid 10px hsla(0, 0%, 0%, 0.2);
+}
+
+/* Nav menu css */
+nav {
+    display: inline-flex;
+    font-size: 22px;
+    background-color: hsla(235, 12%, 35%, 0.2);
+    width: 100%;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+ul .nav-menu {
+    align-items: center;
+
+}
+
+.nav-menu li {
+    display: inline-flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+}
+
+.nav-item {
+    display: inline-flex;
+    color: hsla(235, 12%, 35%, 0.8);
+    border-radius: 5px;
+    margin: 5px 50px;
+    padding: 6px;
+    align-items: center;   
+    justify-content: center;
+}
+
+.nav-item::after {
+    display: inline-flex;
+    align-items: baseline;
+    float: right;
+    content:"\25be";
+}
+
+.nav-item:hover {
+    background-color: hsla(0, 0%, 50%, 0.3);
+}
+
+.nav-item:active {
+    background-color: hsla(0, 0%, 50%, 0.7);
+}
