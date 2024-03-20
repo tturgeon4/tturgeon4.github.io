@@ -82,6 +82,8 @@ header .website-title {
 /* About me section */
 .aboutme {
     width: 100%;
+    height: auto;
+    margin: 0 auto;
     display: inline-flex;
     text-align: left;
     justify-content: space-around;
@@ -104,6 +106,7 @@ header .website-title {
 .aboutme-intro p{
     border-left: 10px solid hsla(0, 0%, 0%, 0.2);
     padding-left: 3px;
+    word-wrap: break-word;
 }
 
 .aboutme-intro .title {

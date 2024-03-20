@@ -7,6 +7,7 @@
     <link href="resources/css/index.css" rel="stylesheet">
     <link href="resources/css/header.css" rel="stylesheet">
     <link href="resources/css/mediaq.css" rel="stylesheet">
+    <script src="scripts/dropdown.js"></script> <!-- Link your JavaScript file -->
   </head>
   <body>
     <header>
@@ -15,7 +16,11 @@
       </div>
       <nav> 
         <ul class="nav-menu">
-          <li><a href="#" class="nav-item">Home Page</a></li>
+          <li onclick = "dropdownFunction()" class="nav-item">Home Page</li>
+          <div id="dropdown" class="dropdown-items">
+            <a href="#aboutme">About Me</a>
+            <a href="#certifications">Certifications</a>
+          </div>
           <li><a href="projects.html" class="nav-item">Projects</a></li>
           <li><a href="#" class="nav-item">Powershell</a></li>
           <li><a href="#" class="nav-item">Resume</a></li>
@@ -51,6 +56,6 @@
           <li><a href="#">LinkedIn: https://www.linkedin.com/in/tanner-turgeon-368166265/</a></li>
         </ul>
       </nav>
-    </footer>
+    </footer> 
   </body>
 </html>
